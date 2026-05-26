@@ -83,3 +83,7 @@ npx serve .
 ## Deployment
 
 This project is deployed via GitHub Pages from the `main` branch root.
+
+---
+
+> **Disclaimer:** This project is for educational and portfolio purposes only. All Starbucks trademarks, logos, and brand assets belong to Starbucks Corporation.
