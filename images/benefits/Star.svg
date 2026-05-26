@@ -1,0 +1,22 @@
+<svg viewBox="0 0 202.248 203.419" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202.247620" height="203.419250" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_0">
+			<effect x="-3.843256" y="13.067069" visibility="visible" fill="rgb(19.7651,61.6139,40.2793)" fill-opacity="0.460000008" effectType="dropShadow" stdDeviation="22.290884" radius="0" />
+		</g>
+		<filter id="filter_0" width="202.247620" height="203.419250" x="0.000000" y="0.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_0)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feOffset dx="-3.843256" dy="13.067069" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="7.43029451" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0775104 0 0 0 0 0.241623 0 0 0 0 0.157958 0 0 0 0.46 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+		<linearGradient id="paint_linear_0" x1="154.241974" x2="36.9599838" y1="100.88501" y2="106.618301" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(35.2596,113.673,73.066)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(53.0621,197.61,107.05)" offset="1" stop-opacity="1" />
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_0)">
+		<path id="Star 2" d="M68.9127 15.0061C72.4617 8.51797 81.7803 8.51797 85.3293 15.0061C87.9619 19.819 94.1514 21.3446 98.7191 18.3064C104.877 14.2107 113.128 18.5413 113.255 25.9356C113.35 31.4206 118.121 35.6478 123.578 35.0804C130.933 34.3155 136.227 41.9845 132.903 48.591C130.438 53.4916 132.698 59.4521 137.794 61.4854C144.662 64.2265 145.785 73.4771 139.772 77.7823C135.312 80.9758 134.544 87.3041 138.11 91.4723C142.918 97.0914 139.614 105.804 132.289 106.822C126.855 107.577 123.234 112.823 124.455 118.172C126.101 125.381 119.126 131.561 112.167 129.058C107.005 127.201 101.36 130.163 99.9558 135.467C98.0627 142.615 89.0149 144.846 84.0163 139.395C80.3084 135.352 73.9336 135.352 70.2257 139.395C65.2271 144.846 56.1793 142.615 54.2861 135.467C52.8818 130.163 47.2373 127.201 42.0752 129.058C35.1163 131.561 28.1412 125.381 29.7872 118.172C31.0082 112.823 27.3869 107.577 21.9533 106.822C14.6283 105.804 11.3238 97.0914 16.1319 91.4723C19.6984 87.3041 18.93 80.9758 14.4696 77.7823C8.45654 73.4771 9.57978 64.2265 16.4484 61.4854C21.5435 59.4521 23.804 53.4916 21.3386 48.591C18.015 41.9846 23.3086 34.3155 30.6643 35.0804C36.1207 35.6479 40.8923 31.4206 40.9867 25.9356C41.114 18.5413 49.3652 14.2107 55.5229 18.3064C60.0906 21.3446 66.2801 19.819 68.9127 15.0061Z" fill="url(#paint_linear_0)" fill-rule="evenodd" transform="matrix(0.390731,-0.920505,0.920505,0.390731,0,141.98)" />
+	</g>
+</svg>

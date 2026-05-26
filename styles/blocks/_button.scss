@@ -1,0 +1,35 @@
+.button {
+  background: var(--linear-gradient);
+  color: var(--color-light);
+  font-weight: 600;
+  border: none;
+
+  @include hover {
+    --angle: 33deg;
+    background: linear-gradient(var(--angle), #237249, #35c66b 100%);
+  }
+
+  &-transparent {
+    @include reset-link;
+    @include flex-center;
+    width: 171px;
+    height: 75px;
+    background: transparent;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+    color: var(--color-light-gray);
+    border: 1px solid;
+    border-radius: var(--border-radius-button);
+
+    @include hover {
+      color: var(--color-dark);
+      background: var(--color-light);
+    }
+
+    @include tablet {
+      width: 112px;
+      height: 50px;
+      font-size: 16px;
+    }
+  }
+}

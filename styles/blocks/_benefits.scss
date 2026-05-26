@@ -1,0 +1,233 @@
+.benefits {
+  margin-bottom: 100px;
+
+  @include mobile {
+    margin-bottom: 35px;
+  }
+
+  &__body {
+    position: relative;
+    max-width: 1030px;
+    min-width: 218px;
+    margin-inline: auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-inline: 70px;
+    border-radius: 46px;
+    background: linear-gradient(
+      230.31deg,
+      rgba(255, 255, 255, 1) 4%,
+      rgba(229.48524475097656, 229.48524475097656, 229.48524475097656, 1) 64%,
+      rgba(251, 251, 251, 1) 89%
+    );
+
+    @include desktop {
+      padding-block: 20px;
+      padding-inline: 50px;
+      margin-left: 40px;
+    }
+
+    @include tablet {
+      padding-inline: 25px;
+    }
+
+    @include mobile {
+      max-width: 218px;
+      margin-left: auto;
+    }
+
+    &::before {
+      position: absolute;
+      content: "we\Ahave";
+      white-space: pre;
+      width: 200px;
+      height: 200px;
+      top: -80px;
+      left: -80px;
+      background: url(/images/benefits/Star.svg) center/contain no-repeat;
+
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--color-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 39px;
+
+      @include mobile {
+        width: 118px;
+        height: 118px;
+        font-size: 18px;
+        line-height: 23px;
+        top: -58px;
+        left: -54px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -60px;
+      left: -150px;
+      width: 408px;
+      height: 327px;
+      z-index: -1;
+      filter: blur(177.12498474121094px);
+      background: linear-gradient(
+        244.98deg,
+        rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.17),
+        rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.22)
+          52%
+      );
+
+      @include mobile {
+        width: 166px;
+        height: 132.8px;
+        top: -35px;
+        left: 90px;
+        z-index: 1;
+        filter: blur(71.93331909179688px);
+        background: linear-gradient(
+          244.98deg,
+          rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.17),
+          rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.22)
+            52%
+        );
+      }
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 133px;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+      column-gap: 50px;
+    }
+
+    @include tablet {
+      column-gap: 20px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+    }
+  }
+
+  &-item {
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      height: 175px;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    &::before {
+      @include abs-center;
+      content: "";
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 41px 0px rgb(0, 0, 0, 0.39);
+      z-index: -1;
+      background: linear-gradient(
+        244.98deg,
+        rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1),
+        rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1) 100%
+      );
+
+      @include tablet {
+        width: 125px;
+        height: 125px;
+      }
+
+      @include mobile {
+        width: 86px;
+        height: 86px;
+      }
+    }
+
+    &-heart {
+      @include tablet {
+        width: 150px;
+        height: 150px;
+      }
+
+      @include mobile {
+        width: 85px;
+        height: 107px;
+      }
+    }
+
+    &-rocket {
+      @include tablet {
+        width: 150px;
+        height: 150px;
+      }
+
+      @include mobile {
+        width: 121.9px;
+        height: 118.17px;
+      }
+    }
+
+    &-money {
+      @include tablet {
+        width: 150px;
+        height: 150px;
+      }
+
+      @include mobile {
+        width: 123.61px;
+        height: 89.95px;
+      }
+    }
+  }
+
+  &-text {
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+
+    &--title {
+      @include fluid-text(32, 18);
+      color: var(--color-dark-gray);
+      font-weight: 500;
+    }
+
+    &__description {
+      width: 195px;
+      @include fluid-text(20, 11);
+      line-height: 25px;
+      color: var(--color-dark-gray);
+
+      @include tablet {
+        width: 160px;
+      }
+
+      @include mobile {
+        width: 126px;
+      }
+    }
+  }
+}

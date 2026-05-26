@@ -1,0 +1,19 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-light-gray);
+  font-family: var(--font-family-base);
+  font-size: 20px;
+  font-weight: 400;
+  background-color: var(--color-dark-gray);
+  overflow-x: hidden !important;
+}
+
+.text-gradient {
+  background: var(--linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

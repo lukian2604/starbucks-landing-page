@@ -1,0 +1,72 @@
+.new__products {
+  margin-bottom: 100px;
+
+  &--header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+    text-align: left;
+    margin-bottom: 95px;
+
+    @include desktop {
+      margin-bottom: 50px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 289px;
+      height: 245px;
+      top: 10px;
+      left: 137px;
+      filter: blur(145.59999084472656px);
+      background: linear-gradient(
+        244.98deg,
+        rgba(35.26, 113.67, 73.07, 0.11),
+        rgba(53.06, 197.61, 107.05, 0.15) 52%
+      );
+
+      @include tablet {
+        width: 176px;
+        height: 150px;
+        top: 10px;
+        left: 323px;
+        filter: blur(89.1428451538086px);
+        background: linear-gradient(
+          244.98deg,
+          rgba(35.26, 113.67, 73.07, 0.08),
+          rgba(53.06, 197.61, 107.05, 0.11) 52%
+        );
+      }
+    }
+  }
+
+  &-title {
+    @include fluid-text(80, 53);
+    font-weight: 800;
+    line-height: 98px;
+
+    @include tablet {
+      line-height: 65px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-description {
+    @include fluid-text(20, 13);
+    max-width: 444px;
+    min-width: 257px;
+  }
+
+  &--body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,115 @@
+.events__card {
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    transition-duration: var(--transition-duration);
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 260px;
+    padding-top: 44px;
+    padding-left: 27px;
+    padding-bottom: 22px;
+    border-radius: var(--border-radius);
+
+    @include hover {
+      box-shadow: 2px 2px 5px var(--color-green);
+    }
+
+    @include tablet {
+      height: 150px;
+      padding-top: 25px;
+      padding-bottom: 12px;
+    }
+
+    @include mobile {
+      align-items: center;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  &-item:nth-child(1) {
+    width: 100%;
+    background: url(/images/events/1.png) 23% 9% no-repeat;
+    grid-column: 1 / span 3;
+
+    @include mobile {
+      background-size: 130%;
+      grid-column: span 6;
+      order: 1;
+    }
+  }
+
+  &-item:nth-child(2) {
+    width: 100%;
+    background: url(/images/events/2.png) center/cover no-repeat;
+    grid-column: 4 / span 3;
+
+    @include mobile {
+      grid-column: span 6;
+      order: 4;
+    }
+  }
+
+  &-item:nth-child(3) {
+    width: 100%;
+    background: url(/images/events/3.png) center/cover no-repeat;
+    grid-column: 1 / span 2;
+
+    @include mobile {
+      grid-column: span 3;
+      order: 2;
+    }
+  }
+
+  &-item:nth-child(4) {
+    width: 100%;
+    background: url(/images/events/4.png) center/cover no-repeat;
+    grid-column: 3 / span 2;
+
+    @include mobile {
+      grid-column: span 3;
+      order: 3;
+    }
+  }
+
+  &-item:nth-child(5) {
+    width: 100%;
+    background: url(/images/events/5.png) center/cover no-repeat;
+    grid-column: 5 / span 2;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-title {
+    @include fluid-text(32, 18);
+    font-weight: 500;
+  }
+
+  &-button {
+    width: 167px;
+    height: 74px;
+    border-radius: var(--border-radius-button-alternate);
+    font-size: 24px;
+    font-weight: 600;
+
+    @include hover {
+      transform: translateY(-2px) translateX(-2px) scale(1.02);
+      box-shadow: 2px 2px 5px var(--color-light-gray);
+    }
+
+    @include tablet {
+      width: 104px;
+      height: 42px;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background-color: var(--color-dark);
+
+  @include tablet {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 120px;
+    column-gap: 25px;
+    flex-wrap: wrap;
+
+    @include tablet {
+      margin-bottom: 42px;
+      row-gap: 50px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 82px;
+
+    @include desktop {
+      column-gap: 50px;
+    }
+
+    @include tablet {
+      order: 3;
+    }
+
+    @media (max-width: 429px) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 160px;
+      row-gap: 55px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__item {
+    color: var(--color-gray);
+
+    &:nth-child(1) {
+      color: var(--color-light);
+    }
+
+    @include hover {
+      color: var(--color-green);
+    }
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__link {
+    @include reset-link;
+  }
+
+  &__arrow {
+    width: 84px;
+    height: 84px;
+    transition: filter var(--transition-duration),
+      transform var(--transition-duration);
+    @include hover {
+      filter: brightness(10);
+      transform: scale(1.05);
+    }
+
+    @include tablet {
+      width: 53px;
+      height: 53px;
+      order: 2;
+    }
+  }
+
+  &__tell {
+    @include reset-link;
+    background: linear-gradient(
+      244.98deg,
+      rgb(35.26, 113.67, 73.07),
+      rgb(53.06, 197.61, 107.05) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    webkit-text-fill-color: transparent;
+    color: transparent;
+
+    transition: color var(--transition-duration),
+      -webkit-text-fill-color var(--transition-duration);
+
+    @include hover {
+      -webkit-text-fill-color: var(--color-gray);
+      color: var(--color-gray);
+      filter: none;
+      text-shadow: none;
+      background: none;
+    }
+  }
+}

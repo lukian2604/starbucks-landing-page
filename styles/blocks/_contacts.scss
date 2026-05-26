@@ -1,0 +1,194 @@
+.contacts {
+  margin-bottom: 50px;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 580px;
+      height: 420px;
+      top: -70px;
+      left: -65px;
+      z-index: -2;
+      background: url(/images/Elements/background-line5.svg) no-repeat;
+
+      @media (min-width: 460px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1058px;
+      height: 676px;
+      right: -246px;
+      bottom: -190px;
+      z-index: -2;
+      background: url(/images/Elements/background-line4.svg) no-repeat;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      align-items: center;
+    }
+
+    @include mobile {
+      flex-direction: column-reverse;
+      row-gap: 50px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @include fluid-text(80, 48);
+    font-weight: 800;
+    line-height: 98px;
+    margin-bottom: 33px;
+
+    @include tablet {
+      line-height: 59px;
+    }
+  }
+
+  &__description {
+    position: relative;
+    @include fluid-text(20, 14);
+    max-width: 395px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 328px;
+      height: 262px;
+      top: -40px;
+      left: 15px;
+      filter: blur(129.6066131591797px);
+      background: linear-gradient(
+        244.98deg,
+        rgba(35.26, 113.67, 73.07, 0.08),
+        rgba(53.06, 197.61, 107.05, 0.11) 52%
+      );
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    @include reset-link;
+    font-size: 32px;
+    padding-left: 75px;
+
+    &::before {
+      @include square(44px);
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background: url(/images/contacs/tel.svg) center/contain no-repeat;
+
+      @include mobile {
+        width: 29px;
+      }
+    }
+
+    @include hover {
+      color: var(--color-green-alternate);
+
+      &::before {
+        filter: brightness(0) invert(1);
+        transform: scaleY(0.9) scale(0.8);
+      }
+    }
+
+    @include mobile {
+      font-size: 21px;
+      padding-left: 43px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &::before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      content: "we\Ahave";
+      white-space: pre;
+      width: 202px;
+      height: 202px;
+      z-index: 1;
+      top: -30px;
+      left: -30px;
+      background: url(/images/benefits/Star.svg) center/contain no-repeat;
+
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 39px;
+
+      @include mobile {
+        top: -70px;
+        left: 327px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 276px;
+      height: 408px;
+      top: 44px;
+      left: 73px;
+      z-index: -1;
+      background: var(--color-green-alternate);
+      clip-path: polygon(29% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 26%);
+
+      @include mobile {
+        top: 17px;
+        left: 133px;
+        width: 343px;
+        height: 234px;
+        clip-path: polygon(48% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 46%);
+      }
+    }
+  }
+
+  &__block {
+    width: 353px;
+    height: 520px;
+    overflow: hidden;
+    clip-path: polygon(29% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 26%);
+
+    @include mobile {
+      width: 570px;
+      height: 234px;
+      clip-path: polygon(32% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%);
+    }
+  }
+
+  &__image {
+    @include mobile {
+      transform: translate(30px, -155px);
+    }
+  }
+}
